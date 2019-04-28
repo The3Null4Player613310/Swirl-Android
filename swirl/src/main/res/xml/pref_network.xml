@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+
+    <PreferenceCategory
+        android:title="Networking">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_toggle_server"
+            android:title="Server"/>
+        <EditTextPreference
+            android:defaultValue="127.0.0.1"
+            android:key="pref_srv_addr"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Server Address"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
